@@ -1,6 +1,10 @@
 import test from 'ava';
 import { getNotes } from './index';
 
+test('getNotes - Cmaj', t => {
+  t.is(getNotes('C', '3', '5', 'R'), 'C E G C');
+});
+
 test('getNotes - Cmaj7', t => {
   t.is(getNotes('C', '3', '5', '7'), 'C E G B');
 });

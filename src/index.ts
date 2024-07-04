@@ -45,6 +45,8 @@ function parseToken(token: string): Interval {
   } else if (token.startsWith('b') || token.startsWith('#')) {
     modifier = token.charAt(0);
     size = parseInt(token.slice(1));
+  } else if (token === 'R') {
+    size = 8;
   }
   return {
     size,
