@@ -24,7 +24,7 @@ export default function App() {
     return (
         <div className="app">
             <section className="input">
-                <h1>Jazz Voicings</h1>
+                <h1>Chord Voicings</h1>
                 <form onSubmit={onSubmit}>
                     <textarea
                         name="voicings"
