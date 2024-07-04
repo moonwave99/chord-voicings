@@ -59,8 +59,8 @@ function getInterval(token: string): string {
   return `${size}${quality}`;
 }
 
-function getNotes(root: string, ...notes: string[]): string {
-  return [root, ...notes.map(n => Note.transpose(root, getInterval(n)))].join(' ');
+function getNotes(root: string, ...notes: string[]): string[] {
+  return notes.map(n => Note.transpose(root, getInterval(n)));
 }
 
 export { getNotes };
